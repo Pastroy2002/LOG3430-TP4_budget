@@ -16,4 +16,5 @@ jobs:
             - name: Run tests
               run: python manage.py test
             - name: Run bisect
+              if: failure()
               run: python myscript.py
